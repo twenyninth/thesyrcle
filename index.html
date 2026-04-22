@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYRCLE | NOT MADE TO BLEND IN</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/SYRCLE%20PNG%20WHITE.webp" type="image/png">
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://ajax.googleapis.com; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://docs.google.com; script-src 'self' 'unsafe-inline' https://ajax.googleapis.com; worker-src 'self' blob:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <meta name="description" content="Get the best and most creative football jerseys. High quality, premium designs.">
+    
+    <!-- Google Fonts: Outfit, Sedgwick Ave Display & Noto Kufi Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="assets/SYRCLE%20PNG%20WHITE.webp" as="image">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Sedgwick+Ave+Display&family=UnifrakturCook:wght@700&family=Noto+Kufi+Arabic:wght@300;400;500;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Sedgwick+Ave+Display&family=UnifrakturCook:wght@700&family=Noto+Kufi+Arabic:wght@300;400;500;700;900&display=swap" rel="stylesheet"></noscript>
+    
+    <link rel="stylesheet" href="styles.css?v=11">
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="logo">
+            <picture>
+                <img src="assets/SYRCLE%20PNG%20WHITE.webp" alt="Syrcle Logo" class="logo-img">
+            </picture>
+            <span>SYRCLE.</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+                <li><a href="#collection" data-i18n="nav.collection">Collection</a></li>
+                <li><a href="#lookbook" data-i18n="nav.lookbook">Lookbook</a></li>
+                <li><a href="#order" data-i18n="nav.order">Order Now</a></li>
+            </ul>
+        </nav>
+        <div class="navbar-right">
+            <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                <span class="lang-option" data-lang="en">EN</span>
+                <span class="lang-divider">|</span>
+                <span class="lang-option" data-lang="fr">FR</span>
+                <span class="lang-divider">|</span>
+                <span class="lang-option" data-lang="ar">عربي</span>
+            </button>
+            <a href="#order" class="btn btn-outline nav-cta" data-i18n="nav.shop">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n-html="hero.title">WEAR THE <span class="highlight">GLORY.</span></h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Premium football jerseys crafted for true fans. Unmatched quality, creative designs, and pure dedication to the beautiful game.</p>
+            <div class="hero-actions">
+                <a href="#collection" class="btn btn-primary" data-i18n="hero.cta1">Explore Collection</a>
+                <a href="#order" class="btn btn-secondary" data-i18n="hero.cta2">Custom Order</a>
+            </div>
+        </div>
+        <div class="hero-graphic">
+            <!-- Decorative abstract shapes for the hero -->
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+    </section>
+
+    <!-- Jersey Showcase Section -->
+    <section class="collection" id="collection">
+        <div class="section-header">
+            <h2 data-i18n-html="collection.title">LATEST <span class="highlight">DROPS</span></h2>
+            <p data-i18n="collection.sub">Elevate your matchday experience with our exclusive designs.</p>
+        </div>
+
+        <div class="grid-container">
+            <!-- Product Card 1 Wrapper -->
+            <div class="product-wrapper" style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem; width: 100%; max-width: 450px;">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        
+
+                        <!-- Random background graffiti pattern -->
+                        <div class="graffiti-pattern">
+                            <span>THE SPLIT</span>
+                        </div>
+
+                        <img src="assets/jersey-front.webp" alt="Syrcle Signature Front" class="product-img front" data-img-short="assets/jersey-front.webp" data-img-long="assets/split-jersey-longsleeve.webp">
+                    </div>
+                    <div class="product-info" style="padding-bottom: 2rem;">
+                        <h3 class="product-name" data-i18n="product.name">Moroccan Team FanMade Kit - "THE SPLIT"</h3>
+                        <p class="product-price" style="margin-bottom: 1rem;">199 MAD</p>
+                        <div class="sleeve-toggle">
+                            <button class="sleeve-btn active" data-sleeve="short" data-i18n="product.short_sleeve">Short Sleeve</button>
+                            <button class="sleeve-btn" data-sleeve="long" data-i18n="product.long_sleeve">Long Sleeve</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Button separated for stable clicking -->
+                <a href="#order" class="btn btn-icon" style="align-self:stretch;text-align:center;"><span data-i18n="product.order">Order Now</span> <span class="arrow">→</span></a>
+            </div>
+
+            <!-- Product Card 2 Wrapper -->
+            <div class="product-wrapper" style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem; width: 100%; max-width: 450px;">
+                <div class="product-card">
+                    <!-- Anti-Copycat Warning Banner -->
+                    <div class="copycat-banner" id="copycatBanner">
+                        <div class="copycat-banner-inner">
+                            <div class="copycat-marquee">
+                                <span data-i18n-html="copycat.marquee">⚠️ BEWARE OF COPYCATS — OUR ORIGINAL DESIGN HAS BEEN COPIED — ONLY TRUST SYRCLE.&nbsp;&nbsp;&nbsp;⚠️ BEWARE OF COPYCATS — OUR ORIGINAL DESIGN HAS BEEN COPIED — ONLY TRUST SYRCLE.&nbsp;&nbsp;&nbsp;</span>
+                            </div>
+                        </div>
+                        <p class="copycat-subtitle" data-i18n-html="copycat.subtitle">We've found identical attempts copying this unique design online. This is the <strong>only original</strong>. Don't get fooled.</p>
+                    </div>
+                    <div class="product-image-container">
+                        
+                        <!-- Random background graffiti pattern -->
+                        <div class="graffiti-pattern">
+                            <span>THE MAP</span>
+                        </div>
+
+                        <img src="assets/black-jersey-short.webp" alt="Syrcle Signature Front Black" class="product-img front" data-img-short="assets/black-jersey-short.webp" data-img-long="assets/black-jersey-front.webp">
+                    </div>
+                    <div class="product-info" style="padding-bottom: 2rem;">
+                        <h3 class="product-name" data-i18n="product.name2">Moroccan Team FanMade Kit - "THE MAP"</h3>
+                        <p class="product-price" style="margin-bottom: 1rem;">199 MAD</p>
+                        <div class="sleeve-toggle">
+                            <button class="sleeve-btn active" data-sleeve="short" data-i18n="product.short_sleeve">Short Sleeve</button>
+                            <button class="sleeve-btn" data-sleeve="long" data-i18n="product.long_sleeve">Long Sleeve</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Button separated for stable clicking -->
+                <a href="#order" class="btn btn-icon" style="align-self:stretch;text-align:center;"><span data-i18n="product.order">Order Now</span> <span class="arrow">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lookbook Carousel Section -->
+    <section class="lookbook" id="lookbook">
+        <div class="section-header">
+            <h2 data-i18n-html="lookbook.title">STREET <span class="highlight">LENS</span></h2>
+            <p data-i18n="lookbook.sub">How the community wears it.</p>
+        </div>
+        
+        <div class="carousel-container">
+            <!-- Background sweeping text graffiti effect -->
+            <div class="graffiti-pattern lookbook-graffiti">
+                <span class="graf-1">URBAN</span>
+                <span class="graf-2">STREETS</span>
+                <span class="graf-3">CULTURE</span>
+            </div>
+
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide"><img src="assets/black-mockup-1.webp" alt="Black Jersey Mockup" class="carousel-img" draggable="false" loading="lazy"></div>
+                <div class="carousel-slide"><img src="assets/Untitled (23).webp" alt="Syrcle Jersey Worn" class="carousel-img" draggable="false" loading="lazy"></div>
+                <div class="carousel-slide"><img src="assets/black-mockup-2.webp" alt="Black Jersey Mockup" class="carousel-img" draggable="false" loading="lazy"></div>
+                <div class="carousel-slide"><img src="assets/Untitled (31).webp" alt="Syrcle Jersey Worn" class="carousel-img" draggable="false" loading="lazy"></div>
+                <div class="carousel-slide"><img src="assets/black-mockup-3.webp" alt="Black Jersey Mockup" class="carousel-img" draggable="false" loading="lazy"></div>
+                <div class="carousel-slide"><img src="assets/Untitled (27).webp" alt="Syrcle Jersey Worn" class="carousel-img" draggable="false" loading="lazy"></div>
+                <div class="carousel-slide"><img src="assets/Untitled (cc28).webp" alt="Syrcle Jersey Worn" class="carousel-img" draggable="false" loading="lazy"></div>
+                <div class="carousel-slide"><img src="assets/black-mockup-5.webp" alt="Black Jersey Mockup" class="carousel-img" draggable="false" loading="lazy"></div>
+                <div class="carousel-slide"><img src="assets/Untitled (33).webp" alt="Syrcle Jersey Worn" class="carousel-img" draggable="false" loading="lazy"></div>
+                <div class="carousel-slide"><img src="assets/black-mockup-6.webp" alt="Black Jersey Mockup" class="carousel-img" draggable="false" loading="lazy"></div>
+                <div class="carousel-slide"><img src="assets/Untitled (30).webp" alt="Syrcle Jersey Worn" class="carousel-img" draggable="false" loading="lazy"></div>
+                <div class="carousel-slide"><img src="assets/Untitled (32).webp" alt="Syrcle Jersey Worn" class="carousel-img" draggable="false" loading="lazy"></div>
+                <div class="carousel-slide"><img src="assets/Untitled (26).webp" alt="Syrcle Jersey Worn" class="carousel-img" draggable="false" loading="lazy"></div>
+            </div>
+            
+            <!-- Navigation controls -->
+            <div class="carousel-nav">
+                <button class="btn-icon carousel-btn" id="scrollLeft"><span class="arrow">←</span></button>
+                <button class="btn-icon carousel-btn" id="scrollRight"><span class="arrow">→</span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section (Google Forms) -->
+    <section class="order-section" id="order">
+        <div class="order-container">
+            <div class="order-text">
+                <h2 data-i18n-html="order.title">READY TO <span class="highlight">ORDER?</span></h2>
+                <p data-i18n="order.desc">Fill out the form below to secure your jersey. Once submitted, our team will review the details and get back to you with payment instructions and delivery estimations.</p>
+                <ul class="perks">
+                    <li data-i18n="order.perk1">✓ Worldwide Shipping</li>
+                    <li data-i18n="order.perk2">✓ Secure Packaging</li>
+                    <li data-i18n="order.perk3">✓ Premium Quality Guarantee</li>
+                </ul>
+            </div>
+            
+            <div class="form-wrapper">
+                <form id="orderForm" class="custom-form">
+                    <!-- Anti-Bot Honeypot -->
+                    <div style="display:none;" aria-hidden="true">
+                        <label for="website">Leave this field blank if you are human:</label>
+                        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" data-i18n="form.product.label">PRODUCT</label>
+                        <div class="product-select-group">
+                            <label class="product-select-card">
+                                <input type="radio" name="product" value="THE SPLIT - 2025/26 MAIN KIT" required checked>
+                                <div class="product-select-inner">
+                                    <img src="assets/jersey-front.webp" alt="White Jersey" class="product-select-img">
+                                    <span class="product-select-name" data-i18n="form.product.white">White Jersey</span>
+                                </div>
+                            </label>
+                            <label class="product-select-card">
+                                <input type="radio" name="product" value="THE MAP - 2025/26 MAIN KIT">
+                                <div class="product-select-inner">
+                                    <img src="assets/black-jersey-short.webp" alt="Black Jersey" class="product-select-img">
+                                    <span class="product-select-name" data-i18n="form.product.black">Black Jersey</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Dynamic jersey customization cards rendered by JS -->
+                    <div id="jerseyItems" class="jersey-items-container"></div>
+
+                    <div class="form-group">
+                        <label for="full_name" class="form-label" data-i18n="form.full_name.label">YOUR FULL NAME FOR CONFIRMATION</label>
+                        <input type="text" id="full_name" name="full_name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label" data-i18n="form.email.label">YOUR EMAIL</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label" data-i18n="form.phone.label">YOUR NUMBER / WHATSAPP FOR CONFIRMATION</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" pattern="[\+]?[0-9\s\-]{7,15}" title="Enter a valid phone number (7-15 digits)" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address" class="form-label" data-i18n="form.address.label">YOUR ADDRESS FOR DELIVERY</label>
+                        <textarea id="address" name="address" class="form-control" rows="4" required></textarea>
+                    </div>
+
+
+                    <div class="form-group confirmation-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="confirmation" required>
+                            <span class="checkmark"></span>
+                            <span class="checkbox-text" data-i18n="form.confirmation.desc">We will be contacting you in your number anytime soon so you confirm the order with us. PRICE: 199 MAD W/ 49 MAD SHIPPING FEES</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary submit-btn" id="submitOrderBtn">
+                        <span class="btn-text" data-i18n="form.submit">SUBMIT ORDER</span>
+                    </button>
+                </form>
+                
+                <div class="success-message" id="successMessage" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3 data-i18n="form.success.title">ORDER RECEIVED</h3>
+                    <p data-i18n="form.success.desc">Thank you! We will contact you shortly to confirm the details and proceed with shipping.</p>
+                    <!-- Jersey Previews shown after confirmation -->
+                    <div id="jerseyPreviewsContainer" class="jersey-previews-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <picture>
+                    <img src="assets/SYRCLE%20PNG%20WHITE.webp" alt="Syrcle Logo" class="footer-logo-img">
+                </picture>
+                <span>SYRCLE.</span>
+            </div>
+            <p data-i18n="footer.tagline">Your premier destination for verified, high-quality football jerseys.</p>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.copy">© 2026 Syrcle. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="custom-cursor"></div>
+    <script src="script.js?v=8"></script>
+    <script src="i18n.js?v=9"></script>
+</body>
+</html>

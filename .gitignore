@@ -1,0 +1,6 @@
+backup/
+backup_*.zip
+*.py
+__pycache__/
+dev_server.ps1
+preview.html
