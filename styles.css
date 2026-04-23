@@ -1546,6 +1546,15 @@ textarea.form-control {
     line-height: 1.4;
 }
 
+.confirm-price {
+    display: inline;
+    font-weight: 900;
+    font-size: 1.05rem;
+    color: var(--primary-accent);
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 12px rgba(224, 221, 207, 0.3);
+}
+
 .submit-btn {
     margin-top: 1rem;
     width: 100%;

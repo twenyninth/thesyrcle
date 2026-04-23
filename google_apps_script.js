@@ -99,13 +99,13 @@ function sendTelegramNotification(product, jerseysDetail, fullName, email, phone
   var BOT_TOKEN = "7965913278:AAEtNQNc81DREN3NaLkdXxbN-2AgYsZf5t4";
   var CHAT_ID = "808774220";
   
-  var message = "🛒 *New SYRCLE Order!*\n\n"
-    + "📦 *Product:* " + product + "\n"
-    + "👕 *Details:* " + jerseysDetail + "\n\n"
-    + "👤 *Customer:* " + fullName + "\n"
-    + "📧 *Email:* " + email + "\n"
-    + "📞 *Phone:* " + phone + "\n"
-    + "📍 *Address:* " + address;
+  var message = "🛒 New SYRCLE Order!\n\n"
+    + "📦 Product: " + product + "\n"
+    + "👕 Details: " + jerseysDetail + "\n\n"
+    + "👤 Customer: " + fullName + "\n"
+    + "📧 Email: " + email + "\n"
+    + "📞 Phone: " + phone + "\n"
+    + "📍 Address: " + address;
   
   var url = "https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage";
   
@@ -115,12 +115,10 @@ function sendTelegramNotification(product, jerseysDetail, fullName, email, phone
       contentType: "application/json",
       payload: JSON.stringify({
         chat_id: CHAT_ID,
-        text: message,
-        parse_mode: "Markdown"
+        text: message
       })
     });
   } catch (telegramError) {
-    // Log error but don't fail the order
     Logger.log("Telegram notification failed: " + telegramError.message);
   }
 }

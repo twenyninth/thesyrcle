@@ -100,15 +100,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const isLong = sleeveRadio && sleeveRadio.value === 'Long';
         const price = isLong ? BASE_PRICE + LONG_SLEEVE_EXTRA : BASE_PRICE;
 
-        const confirmText = document.querySelector('.checkbox-text[data-i18n="form.confirmation.desc"]');
+        const confirmText = document.querySelector('.checkbox-text[data-i18n-html="form.confirmation.desc"]');
         if (confirmText) {
             const lang = document.documentElement.getAttribute('lang') || 'en';
             if (lang === 'ar') {
-                confirmText.textContent = `سنتصل بك على رقمك في أقرب وقت لتأكيد الطلب معنا. السعر: ${price} درهم مع 49 درهم رسوم التوصيل`;
+                confirmText.innerHTML = `سنتصل بك على رقمك في أقرب وقت لتأكيد الطلب معنا. <strong class="confirm-price">السعر: ${price} درهم مع 49 درهم رسوم التوصيل</strong>`;
             } else if (lang === 'fr') {
-                confirmText.textContent = `Nous vous contacterons sur votre numéro très prochainement pour confirmer la commande avec nous. PRIX : ${price} MAD AVEC 49 MAD DE FRAIS DE LIVRAISON`;
+                confirmText.innerHTML = `Nous vous contacterons sur votre numéro très prochainement pour confirmer la commande avec nous. <strong class="confirm-price">PRIX : ${price} MAD AVEC 49 MAD DE FRAIS DE LIVRAISON</strong>`;
             } else {
-                confirmText.textContent = `We will be contacting you in your number anytime soon so you confirm the order with us. PRICE: ${price} MAD W/ 49 MAD SHIPPING FEES`;
+                confirmText.innerHTML = `We will be contacting you in your number anytime soon so you confirm the order with us. <strong class="confirm-price">PRICE: ${price} MAD W/ 49 MAD SHIPPING FEES</strong>`;
             }
         }
     }
